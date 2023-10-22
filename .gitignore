@@ -1,0 +1,17 @@
+
+AxonServer.zip
+AxonServer/AxonServer-2023.1.2/axoniq-cli.jar
+AxonServer/AxonServer-2023.1.2/AxonIQ.pid
+AxonServer/AxonServer-2023.1.2/axonserver-cli.jar
+AxonServer/AxonServer-2023.1.2/axonserver-migration.jar
+AxonServer/AxonServer-2023.1.2/axonserver.jar
+AxonServer/AxonServer-2023.1.2/axonserver.properties
+AxonServer/AxonServer-2023.1.2/data/axonserver-controldb.mv.db
+AxonServer/AxonServer-2023.1.2/data/default/00000000000000000000.events
+AxonServer/AxonServer-2023.1.2/data/default/00000000000000000000.snapshots
+AxonServer/AxonServer-2023.1.2/extensions/axon-server-extension-ldap-4.6.3.zip
+AxonServer/AxonServer-2023.1.2/extensions/axon-server-extension-oauth-4.6.1.zip
+AxonServer/AxonServer-2023.1.2/log/_admin/00000000000000000001.log
+AxonServer/AxonServer-2023.1.2/log/default/00000000000000000001.log
+AxonServer/AxonServer-2023.1.2/plugins/cache/bundle0/last.java.version
+AxonServer/AxonServer-2023.1.2/README.txt
