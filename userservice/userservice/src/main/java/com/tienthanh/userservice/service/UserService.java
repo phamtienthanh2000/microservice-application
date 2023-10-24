@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -26,7 +27,7 @@ public class UserService {
 	public List<User> getAllUser() {
 		return userRepository.findAll();
 	}
-
+	
 	public UserDTO saveUser(UserDTO userDTO) {
 		userDTO.setPassword(passwordEncoder.encode(userDTO.getPassword()));
 		User user = UserDTO.dtoToEntity(userDTO);
@@ -43,7 +44,6 @@ public class UserService {
 			BeanUtils.copyProperties(user, dto);
 			// gia su thang passwordEncoder dung
 			if(passwordEncoder.matches(password, dto.getPassword())) {
-				System.out.println("This line should print");
 				Algorithm algorithm = Algorithm.HMAC256("secret".getBytes());
 				String accessToken = JWT.create()
 						.withSubject(user.getUsername())

@@ -25,7 +25,7 @@ import com.tienthanh.userservice.service.UserService;
 
 @ExtendWith(SpringExtension.class)
 
-public class UserServiceTest {
+class UserServiceTest {
     @Mock
     private UserRepository userRepository;
     
